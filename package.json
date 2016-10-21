@@ -40,9 +40,6 @@
   ],
   "author": "Team You Got Hack",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/yougothack/hyperbowl/issues"
-  },
   "homepage": "https://github.com/yougothack/hyperbowl#readme",
   "dependencies": {
     "autoprefixer": "6.4.1",
@@ -51,6 +48,7 @@
     "dotenv": "^2.0.0",
     "express": "4.14.0",
     "lodash": "4.15.0",
+    "node-sass": "^3.10.1",
     "raven-js": "3.6.1",
     "react": "15.3.1",
     "react-dom": "15.3.1",
