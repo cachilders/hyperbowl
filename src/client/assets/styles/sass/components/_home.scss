@@ -1,0 +1,23 @@
+.home-banner {
+	background-image: url("http://imgsrc.hubblesite.org/hu/db/images/hs-2015-12-a-xlarge_web.jpg");
+	background-size: cover;
+  height: 35em;
+
+	h3 {
+		padding-top: 2%;
+		text-align: center;
+	}
+
+	h1 {
+		padding: 10% 0% 0% 24px;
+		letter-spacing: 3px;
+		text-align: center;
+	}
+};
+
+@media screen and (max-width: 560px) {
+  .home-banner {
+  	margin-top: 5%;
+  	padding-top: 30%;
+  }
+}

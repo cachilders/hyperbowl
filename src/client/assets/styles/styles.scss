@@ -1,7 +1,15 @@
-@import './sass/components/navbar';
+@import 
+"./sass/components/navbar",
+"./sass/components/home",
+"./sass/components/footer";
+
+@font-face {
+  font-family: ailerons;
+  src: url("./ailerons.woff");
+}
 
 //Space color palette
-$background: #1f282d;
+$background: #1D1D1D;
 $teal: #d3fff8;
 $darkteal: #66d6d2;
 $lilac: #c1aaff;
@@ -9,9 +17,7 @@ $lilac: #c1aaff;
 body {
 	background-color: $background;
   margin: 0;
-  
   font-family: 'Helvetica Neueu', sans-serif;
-  font-weight: bold;
   color: $teal;
 
 	a {
@@ -23,7 +29,7 @@ body {
 		}
 
 		&:visited {
-			color: $darkteal;
+			color: $teal;
 		}
 	}
 }

@@ -6,7 +6,7 @@ export default class Navbar extends Component {
     return (
       <div className="container text-center navigation">
         <ul>
-          <li><Link to="/">HYPERBOWL</Link></li>
+          <li className="logo"><Link to="/">HYPERBOWL</Link></li>
           <li><Link to="/team">TEAM</Link></li>
           <li><Link to="/code">CODE</Link></li>
           <li><Link to="/login">LOGIN</Link></li>
