@@ -8,8 +8,18 @@
   text-align: center;
 }
 
+.footer-logo {
+  height: 0em;
+  width: 0em;
+}
+
 @media screen and (max-width: 560px) {
   .footer {
   	font-size: 2em;
+  }
+
+  .footerLogo {
+    height: 7em;
+    width: 7em;
   }
 }

@@ -1,14 +1,40 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router';
+// import { Link } from 'react-router';
 
-export default class Login extends Component {
+import { Modal } from 'react-bootstrap';
+
+class Login extends Component {
+	constructor(props) {
+    super(props);
+    this.state = { showModal: false, loggedIn: false };
+
+    this.open = this.open.bind(this);
+    this.close = this.close.bind(this);
+	}
+
+	open() {
+		console.log("inside open")
+		this.setState({ showModal: true });
+	}
+
+	close() {
+		this.setState({ showModal: false });
+	}
+
   render() {
-  // This component will be a modal
-  // The login in the navbar will toggle to navigate to the profile page when logged in
+  	console.log(Modal)
     return (
-      <div className="container text-center">
-        LOGIN PAGE HOMIE
-      </div>
+      <span className="container text-center">
+        <span onClick={this.open}>LOGIN</span>
+        <Modal show={this.state.showModal} onHide={this.close}>
+          <Modal.header>HYPERBOWL</Modal.header>
+          <Modal.body>
+            Sign in with Github
+          </Modal.body>
+        </Modal>
+      </span>
     );
   }
-}
+};
+
+export default Login;
