@@ -6,6 +6,7 @@ const http       = require('http').Server(app);
 const path       = require('path');
 const bodyParser = require('body-parser');
 const config     = require('./server/config.json');
+const redis      = require('./server/models/redis-config');
 
 const port       = process.env.PORT || config.port;
 
@@ -18,4 +19,8 @@ app.get('/', (req, res) => res.redirect('/js/application.js'));
 
 
 // START server
-http.listen(port, () => console.log('Serving at ', port));
+http.listen(port, () => process.stdout.write('Serving at ' + port + '\n'));
+
+// TEST redis store connection
+redis.on('error', (err) => process.stdout.write('Hm. Something went wrong with Redis: ' + err))
+  .on('connect', () => process.stdout.write('Connected to Redis server.\n'));
