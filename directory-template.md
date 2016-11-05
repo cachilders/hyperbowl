@@ -1,32 +1,42 @@
 ```
 .
-|.gitignore
+|[root.configs]
+|[docs]
 |index.js
-|webpackconfig.json
-|etc...
-|--dist/
+|--config/
+    |[webpack.configs]
+|--bin/
+|--build/
+    |[rendered client]
 |--server/
-   |--controllers/
-   |--helpers/
-   |--middlewares/
-   |--models
-   |--tests/
+    |--config.json
+    |--controllers/
+    |--helpers/
+    |--middlewares/
+    |--models
+    |--tests/
 |--src/
-   |--actions/
-   |--components/
-   |--reducers/
-   |--stores/
-   |--stylesheets/
-      |main.scss
-      |--base/
-      |--components/
-      |--layout/
-      |--pages/
-      |--themes/
-      |--abstracts/
-      |--vendors/
-   |--tests/
-   |--views/
-|
+    |--client/
+      |--assets/
+        |--index.html
+        |--actions/
+        |--components/
+        |--reducers/
+        |--stores/
+        |--styles/
+            |main.scss
+            |--base/
+            |--components/
+            |--layout/
+            |--pages/
+            |--themes/
+            |--abstracts/
+            |--vendors/
+        |--tests/
+        |--views/
+    |--scripts/
+        |[build-specific requirements (css/app/etc)]
+|--test/
+    |--unit/
 |
 ```

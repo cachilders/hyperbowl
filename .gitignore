@@ -1,9 +1,12 @@
 .env
 dist
+build
 bower_components
 node_modules
 DS_Store
+.DS_Store
 .vscode
+.codekit-cache
 
 # Logs
 logs

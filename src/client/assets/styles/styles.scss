@@ -1,0 +1,35 @@
+@import 
+"./sass/components/navbar",
+"./sass/components/home",
+"./sass/components/footer";
+
+@font-face {
+  font-family: ailerons;
+  src: url("./ailerons.woff");
+}
+
+//Space color palette
+$background: #1D1D1D;
+$teal: #d3fff8;
+$darkteal: #66d6d2;
+$lilac: #c1aaff;
+
+body {
+	background-color: $background;
+  margin: 0;
+  font-family: 'Helvetica Neueu', sans-serif;
+  color: $teal;
+
+	a {
+		color: $lilac;
+		text-decoration: none;
+
+		&:hover {
+			color: $lilac;
+		}
+
+		&:visited {
+			color: $teal;
+		}
+	}
+}

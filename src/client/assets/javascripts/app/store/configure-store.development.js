@@ -3,7 +3,7 @@ import { persistState } from 'redux-devtools';
 import promiseMiddleware from 'redux-promise';
 import createLogger from 'redux-logger';
 
-// import rootReducer from '../reducer';
+import rootReducer from '../reducer';
 import DevTools from '../DevTools';
 
 /**
